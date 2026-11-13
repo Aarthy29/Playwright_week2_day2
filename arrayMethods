@@ -1,0 +1,54 @@
+/* 1 Use push() to add elements into an array
+2 Use pop() to remove the last element
+3 Use shift() to remove the first element
+4 Use unshift() to add an element at the beginning
+5 Use includes() to check whether an element exists
+6 Use indexOf() to find the position of an element
+7 Use join() to convert array into string
+8 Use reverse() to reverse the array
+9 Use sort() to sort the array */
+//push - add one or more element at the end of the array
+
+const { log } = require("node:console");
+
+let arr = ['Aarthy',34,true]
+let pushedArray = arr.push();
+console.log(pushedArray)
+
+// remove the 1st element in a array
+let arr1 = ['Aarthy',34,true]
+let poppedArray = arr1.pop()
+console.log((arr1));
+
+//Shift - remove one element at the begining of the array
+let shiftArray=arr1.shift()
+console.log(arr1);
+
+
+//UnShift - add or more one element at the begining of the array
+let unshiftArray=arr1.unshift('Mango',100)
+console.log(arr1);
+
+//includes()-checks whether element is present or not
+let madurai =[100,110,120,4]
+console.log(madurai.includes(400));
+
+//IndexOf
+let num =['200,4,5,7']
+console.log(num.indexOf(33));
+
+//Join and reverse
+
+function reverseWord(str)
+{
+ return str.split("").reverse().join("");
+}
+console.log(reverseWord('Testleaf'));
+
+//sort - ascending or descending
+
+let numbers = [60,10,50,20,70]
+numbers.sort((a,b)=> a -b)
+console.log(numbers);
+
+
